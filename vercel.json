@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/backend/:path*",
+      "destination": "https://medikiosk-backend-seven.vercel.app/:path*"
+    },
+    {
+      "source": "/doctor/:path*",
+      "destination": "https://medikiosk-doctor.vercel.app/:path*"
+    },
+    {
+      "source": "/intake/:path*",
+      "destination": "https://hospital-clinical-intake-system.vercel.app/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://medikiosk-frontend-ecru.vercel.app/$1"
+    }
+  ]
+}
